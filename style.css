@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #faf9f6; /* Sfondo chiaro color carta natia */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.main-header {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.header-slides {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.header-slides::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(94, 23, 38, 0.35), rgba(46, 76, 49, 0.35));
+    z-index: 1;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.main-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.main-header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.intro {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.intro h2 {
+    color: #2e4c31;
+    margin-bottom: 10px;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+    border-top: 4px solid #2e4c31; /* Bordo superiore verde vite */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #2e4c31;
+}
+
+.tabs-container {
+    margin: 30px 0 40px;
+}
+
+.tabs-nav {
+    display: flex;
+    border-bottom: 2px solid #2e4c31;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tab-btn:hover {
+    color: #2e4c31;
+}
+
+.tab-btn.active {
+    color: #2e4c31;
+    border-bottom-color: #2e4c31;
+    font-weight: bold;
+}
+
+.tab-panel {
+    display: none;
+    padding-top: 10px;
+}
+
+.tab-panel.active {
+    display: block;
+    animation: tabFadeIn 0.4s ease forwards;
+}
+
+@keyframes tabFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.stats-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.stats-section h2 {
+    color: #2e4c31;
+    margin-bottom: 25px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 28px 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-bottom: 4px solid #2e4c31;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2e4c31;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Sezione Biodiversità */
+.biodiversity-section {
+    background: #f8f4ef;
+    border-left: 5px solid #2e4c31;
+    padding: 30px 35px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.biodiversity-section h2 {
+    color: #2e4c31;
+    margin-bottom: 15px;
+}
+
+.biodiversity-section p {
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.download-section {
+    background: #f0f4f1;
+    padding: 45px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.download-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #2e4c31; 
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #1c301e;
+}
+
+.btn-secondary {
+    background-color: #2e4c31;
+}
+
+.btn-secondary:hover {
+    background-color: #1c301e;
+}
+
+.main-footer {
+    background-color: #1c301e;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+}

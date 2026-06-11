@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librandi - Sostenibilità Vitivinicola in Calabria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-slides">
+            <div class="slide active" style="background-image: url('vigneto.jpg')"></div>
+            <div class="slide" style="background-image: url('vigneto2.jpg')"></div>
+            <div class="slide" style="background-image: url('vigneto3.jpg')"></div>
+        </div>
+        <div class="container">
+            <h1>CANTINE LIBRANDI</h1>
+            <p>Viticoltura Sostenibile e Tutela del Territorio Calabrese</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="tabs-container">
+            <nav class="tabs-nav" role="tablist">
+                <button class="tab-btn active" data-tab="intro" role="tab" aria-selected="true">Enotria Tellus</button>
+                <button class="tab-btn" data-tab="stats" role="tab" aria-selected="false">I Numeri della Sostenibilità</button>
+                <button class="tab-btn" data-tab="biodiversity" role="tab" aria-selected="false">Biodiversità e Ricerca</button>
+                <button class="tab-btn" data-tab="reports" role="tab" aria-selected="false">Report e Bilanci</button>
+            </nav>
+
+            <div class="tab-panel active" id="tab-intro" role="tabpanel">
+                <section class="intro">
+                    <h2>Enotria Tellus: la nostra filosofia verde</h2>
+                    <p>Radicati a Cirò, traduciamo il rispetto per la terra in azioni concrete, certificando ogni fase della nostra produzione vitivinicola.</p>
+                </section>
+                <section class="pillars-grid">
+                    <div class="card">
+                        <h3>Sostenibilità Ambientale</h3>
+                        <p>Lotta integrata nei vigneti, transizione energetica con fotovoltaico e tutela attiva della biodiversità del suolo.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Impegno Sociale</h3>
+                        <p>Valorizzazione del lavoro locale, sicurezza etica e costanti collaborazioni scientifiche con le Università.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Valore Economico</h3>
+                        <p>Trasparenza di filiera garantita dallo standard Equalitas e promozione della cultura enoica calabrese nel mondo.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-panel" id="tab-stats" role="tabpanel">
+                <section class="stats-section">
+                    <h2>I Numeri della Sostenibilità</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="30" data-prefix="25–" data-suffix="%">25–30%</span>
+                            <p>del fabbisogno energetico coperto dall'impianto fotovoltaico della cantina</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="0" data-suffix="%">0%</span>
+                            <p>turnover in uscita negli ultimi anni, con nuove assunzioni e percorsi di stage attivi</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="50" data-prefix="&gt;" data-suffix="%">&gt;50%</span>
+                            <p>dei fornitori certificati con standard riconosciuto, con obiettivo di incremento continuo</p>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="750" data-prefix="≤" data-suffix="g">≤750g</span>
+                            <p>peso massimo adottato per le bottiglie da 750 ml, sostituite con versioni più leggere</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-panel" id="tab-biodiversity" role="tabpanel">
+                <section class="biodiversity-section">
+                    <h2>Biodiversità e Ricerca</h2>
+                    <p>Librandi ricopre un ruolo da protagonista nella <strong>riscoperta di vitigni autoctoni calabresi</strong> ormai dimenticati o perduti, collaborando attivamente con Università e centri di ricerca nazionali. L'obiettivo è preservare e valorizzare la grande biodiversità vitivinicola regionale, adottando la lotta integrata e orientandosi verso la viticoltura biologica.</p>
+                    <p>L'associazione <strong>"I Vignaioli del Cirò"</strong>, fondata da Librandi, riunisce i conferitori locali selezionati in un'ottica di crescita reciproca delle competenze e del livello qualitativo dei prodotti finali. Sul fronte sociale, l'azienda applica il <strong>CCNL Industria Alimentare</strong>, garantisce contratti a tempo indeterminato e riconosce una retribuzione media superiore alla media territoriale.</p>
+                </section>
+            </div>
+
+            <div class="tab-panel" id="tab-reports" role="tabpanel">
+                <section class="download-section">
+                    <h2>Report e Bilanci di Sostenibilità</h2>
+                    <p>Consulta e scarica i report ufficiali attinti direttamente dal portale aziendale di Cantine Librandi per analizzare gli indicatori ESG conseguiti.</p>
+                    <div class="download-buttons">
+                        <a href="bilancio_di_sostenibilita_2025-2026_low%20(2).pdf" class="btn-download" target="_blank" download>
+                            Scarica Report 2025/2026 (PDF)
+                        </a>
+                        <a href="bilancio_di_sostenibilita_22-23_1.pdf" class="btn-download btn-secondary" target="_blank" download>
+                            Archivio Report 2022/2023 (PDF)
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Progetto Gilda Guido </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
